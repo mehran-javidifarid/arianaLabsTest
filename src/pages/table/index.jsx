@@ -8,18 +8,22 @@ const TableView = () => {
     return (
         <div className={'tableWrapper'}>
             <table>
+                <thead>
                 <tr>
                     <th>Name</th>
                     <th>Family</th>
                     <th>BirthDay</th>
                     <th>skills</th>
                 </tr>
-                {list.map(({name, family, birthDay, skill}) => <tr>
+                </thead>
+                <tbody>
+                {list?.map(({name, family, birthDay, skill}, index) => <tr key={name + index}>
                     <td>{name}</td>
                     <td>{family}</td>
-                    <td>{birthDay}</td>
+                    <td>{birthDay.toString()}</td>
                     <td>{skill?.map((skillItem) => ` ${skillItem.value}`)}</td>
                 </tr>)}
+                </tbody>
             </table>
         </div>
     )

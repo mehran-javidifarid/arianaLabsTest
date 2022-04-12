@@ -41,10 +41,8 @@ const RegisterView = () => {
         try {
             setLoader(true);
             dispatch(setUserList(formValue));
-            console.log(formValue);
             setLoader(false)
         } catch (e) {
-            console.log(e);
             setLoader(false)
         }
     };
