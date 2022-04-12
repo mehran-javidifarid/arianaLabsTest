@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Provider} from "react-redux";
+import Routes from "./routes";
+import {createBrowserHistory} from "history";
+import configureStore from "./configureStore";
+
+const history = createBrowserHistory();
+const initialState = window.INITIAL_REDUX_STATE;
+export const store = configureStore(history, initialState);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Provider store={store}>
+          <Routes/>
+      </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
