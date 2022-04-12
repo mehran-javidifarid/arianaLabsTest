@@ -1,0 +1,25 @@
+.navigationBar{
+    background-color: #0b0c10;
+}
+.navigationBar > a{
+    background-color: #0b0c10;
+    color: #66fcf2;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.title{
+    text-align: center;
+    color: #45a29e;
+}
+.mainBackground{
+    background-color: #1f2833;
+    height: 100vh;
+}
+
+/*// #0b0c10*/
+/*// #1f2833*/
+/*// #c5c6c7*/
+/*// #66fcf2*/
+/*// #45a29e*/

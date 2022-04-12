@@ -1,0 +1,15 @@
+.chartTypeBox{
+    background: #c5c6c7;
+    margin: 10px auto;
+    width: 220px;
+    text-align: center;
+    color: #1f2833;
+    border-radius: 8px;
+    padding: 1px;
+}
+.selectChart{
+    width: 150px;
+    padding: 7px;
+    margin: 5px;
+    border-radius: 8px;
+}

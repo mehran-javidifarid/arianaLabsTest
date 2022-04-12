@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Routes from "./routes";
+import {Provider} from 'react-redux';
+import configureStore from './configureStore'
+import {createBrowserHistory} from "history";
+
+const history = createBrowserHistory();
+const initialState = window.INITIAL_REDUX_STATE;
+export const store = configureStore(history, initialState);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Provider store={store}>
+            <Routes/>
+        </Provider>
+    );
 }
 
 export default App;

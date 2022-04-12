@@ -1,0 +1,18 @@
+.select{
+    margin: 15px;
+}
+.rmsc .dropdown-container{
+    border-radius: 8px;
+}
+.textError{
+    color: #fc6666;
+    padding: 0;
+    margin: -5px 25px;
+    font-size: 14px;
+}
+.dropdown-heading{
+    height: 33px;
+    border-radius: 8px;
+    box-shadow: 2px 5px 14px -3px #45a29e;
+    border: 1px solid #45a29e;
+}
